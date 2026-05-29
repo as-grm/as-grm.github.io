@@ -1,3 +1,4 @@
+---
 # Display name
 title: A.S. GRM
 
@@ -8,6 +9,8 @@ role: Assistant Professor
 organizations:
   - name: University of Ljubljana
     url: https://www.fpp.uni-lj.si
+    
+superuser: true # Add this line just in case!
 
 # Interests listed on his front page
 interests:
@@ -29,3 +32,6 @@ education:
     - course: BTech Marine Engineering - Navigation
       institution: University of Ljubljana
       year: 1995
+---
+
+Some text
