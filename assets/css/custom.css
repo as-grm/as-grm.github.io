@@ -6,3 +6,26 @@
 body, h1, h2, h3, h4, h5, h6, p, a, li {
     font-family: 'Arial', 'Helvetica', sans-serif !important;
 }
+
+html, body {
+    font-size: 0.88rem !important;
+}
+p, li, span, a, div {
+    font-size: 0.92rem !important;
+}
+h1, h2, h3 {
+    letter-spacing: -0.02em !important;
+}
+
+/* Target the navigation bar menu link elements globally */
+.navbar-nav .nav-link, nav a, .menu-item {
+    font-size: 1.3rem !important; /* Adjust this value up or down (e.g., 1.2rem) to get your perfect size */
+    font-weight: 500 !important;   /* Makes the text slightly sharper and easier to read */
+}
+
+/* Force hide the name brand text explicitly inside the header layout container */
+.navbar-brand, a.navbar-brand,
+[class*="BrandText"],
+[class*="logo"] span {
+    display: none !important;
+}

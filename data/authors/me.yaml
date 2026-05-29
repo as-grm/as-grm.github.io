@@ -1,0 +1,61 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: A.S. GRM
+  given: Aleksander Sandro
+  family: GRM
+  alternate: 'A.S. Grm'
+  pronunciation: ''
+  pronouns: ''
+postnominals:
+  - PhD
+status:
+  icon: "⚓️"
+role: Assistant Professor
+bio: |
+  I am an Assistant Professor at the University of Ljubljana. My core research
+  and professional work focuses on Marine Hydromechanics, as well as Industrial
+  and Computational Mathematics.
+
+affiliations:
+  - name: University of Ljubljana
+    url: https://www.fpp.uni-lj.si
+
+links:
+  - icon: at-symbol
+    url: mailto:aleksander.grm@fpp.uni-lj.si
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/as-grm
+
+interests:
+  - Marine Hydromechanics
+  - Industrial and Computational Mathematics
+
+education:
+  - degree: PhD Industrial Mathematics
+    institution: RPTU Kaiserslautern-Landau, Germany
+    end: 2007-03-10
+  - degree: MSc Applied Mathematics
+    institution: Joint ICTP and SISSA, Trieste, Italy
+    end: 2003-09-30
+  - degree: BSc Physics
+    institution: University of Ljubljana, FMF
+    end: 2001-04-15
+  - degree: BTech Marine Engineering - Navigation
+    institution: University of Ljubljana, FPP
+    end: 1995-09-21
+
+experience:
+  - role: Assistant Professor
+    org: C3M Ltd.
+    start: 2008-01-01
+    end: 2015-03-01
+    summary: |
+      Teaching and conducting research within Marine Hydromechanics and applied calculations.
+  - role: Assistant Professor
+    org: University of Ljubljana
+    start: 2015-04-01
+    summary: |
+      Teaching and conducting research within Marine Hydromechanics and applied calculations.

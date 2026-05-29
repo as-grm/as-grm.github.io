@@ -32,15 +32,22 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: system
+    mode: light
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
-    pack: "default"
+    pack: "marine"
     # Optional: Override theme pack colors
     colors:
       primary: "" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
       secondary: ""
       neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
+    # Choose a theme color palette name
+    # Built-in options include: minimal_blue, ocean, forest, minimal_dark, etc.
+    palette: "ocean"
+    # Choose a font set name
+    font: "minimal"
+    # Choose a font size profile
+    font_size: "md"
     colors_light: {}
     colors_dark: {}
     # Optional: Semantic surface color overrides
@@ -80,22 +87,25 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   header:
     enable: true
-    # Header style variant
     style: navbar # navbar | navbar-simple | minimal
-    # Stick to top on scroll
     sticky: true
-    # Menu alignment
     align: center # left | center | right
+
+    # ADD THESE TWO LINES TO NATIVELY FORCE AN EMPTY TEXT BRAND:
+    show_logo: true
+    logo:
+        text: "" # Setting this to an empty string completely disables the header name natively!
+
     # Feature toggles
-    search: true
-    theme_toggle: true
-    theme_picker: true
-    language_switcher: true
-    # Call-to-action button
+    search: false
+    theme_toggle: false  # Hides the sun/moon icon
+    theme_picker: false  # Hides the color dropdown
+    language_switcher: false
+
     cta:
-      enable: false
-      text: ""
-      url: ""
+        enable: false
+        text: ""
+        url: ""
 
   # ────────────────────────────────────────────────────────────────────────────
   # FOOTER

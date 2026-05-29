@@ -1,18 +1,47 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-date: 2026-05-29
+summary: ''
+date: 2022-10-24
 type: landing
 
 sections:
-  - block: biography
-    id: about
+  - block: resume-biography-3
     content:
-      title: About Me
-      username: admin
+      # Choose a user profile to display (a folder name within `content/authors/`)
+      username: me
+      text: ''
+      # Show a call-to-action button under your biography? (optional)
+      button:
+        text: Download CV
+        url: uploads/resume.pdf
+      headings:
+        about: ''
+        education: ''
+        interests: ''
     design:
-      # You can change the background or spacing here
-      spacing:
-        padding: ['20px', '0', '20px', '0']
+      background:
+        gradient_mesh:
+          enable: true
+          # Providing manual colors forces the engine to change from default colors to sea colors:
+          colors:
+            - "#002b49"  # Deep Abyssal Blue
+            - "#004b6e"  # Deep Sea Navy
+            - "#007a99"  # Marine Teal
+            - "#33a6cc"  # Shallow Water Cyan
+      name:
+        size: sm
+      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
+      #background:
+      #  gradient_mesh:
+      #    enable: true
 
+      # Name heading sizing to accommodate long or short names
+      #name:
+      #  size: md # Options: xs, sm, md, lg (default), xl
+
+      # Avatar customization
+      avatar:
+        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        shape: circle # Options: circle (default), square, rounded
 ---
