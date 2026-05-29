@@ -19,8 +19,8 @@ h1, h2, h3 {
 
 /* Target the navigation bar menu link elements globally */
 .navbar-nav .nav-link, nav a, .menu-item {
-    font-size: 1.3rem !important; /* Adjust this value up or down (e.g., 1.2rem) to get your perfect size */
-    font-weight: 500 !important;   /* Makes the text slightly sharper and easier to read */
+    font-size: 1.2rem !important; /* Adjust this value up or down (e.g., 1.2rem) to get your perfect size */
+    font-weight: 600 !important;   /* Makes the text slightly sharper and easier to read */
 }
 
 /* Force hide the name brand text explicitly inside the header layout container */
