@@ -51,9 +51,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      # SWITCHED TO THE STRICT VERSION SETTER TOOL HERE:
+      # THIS IS THE CORRECT, OFFICIAL ACTION USED BY HUGO DEVELOPERS
       - name: Setup Hugo
-        uses: hugo-actions/setup-hugo@v1
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.161.1'
           extended: true
