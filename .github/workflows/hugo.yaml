@@ -49,10 +49,11 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5  # Upgraded from v4 to v5
+        uses: actions/configure-pages@v5
 
+      # SWITCHED TO THE STRICT VERSION SETTER TOOL HERE:
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: hugo-actions/setup-hugo@v1
         with:
           hugo-version: '0.161.1'
           extended: true
