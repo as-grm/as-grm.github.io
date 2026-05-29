@@ -28,6 +28,10 @@ links:
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/as-grm
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=pePP5csAAAAJ&hl=en&oi=ao
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-6386-9251
 
 interests:
   - Marine Hydromechanics
