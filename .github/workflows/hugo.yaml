@@ -15,7 +15,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 defaults:
   run:
@@ -42,7 +42,10 @@ jobs:
           node-version: '24'
 
       - name: Install Project Dependencies
-        run: npm install
+        run: |
+          if [ -f package.json ]; then
+            npm install
+          fi
 
       - name: Install Tailwind CSS CLI
         run: npm install -g @tailwindcss/cli
@@ -51,7 +54,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      # THIS IS THE CORRECT, OFFICIAL ACTION USED BY HUGO DEVELOPERS
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -62,12 +64,13 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
         run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --minify --baseURL "https://as-grm.github.io/"
 
-      name: Upload artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public/
+          path: ./public
+          include-hidden-files: true
 
   deploy:
     environment:
