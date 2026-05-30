@@ -7,20 +7,55 @@ body, h1, h2, h3, h4, h5, h6, p, a, li {
     font-family: 'Arial', 'Helvetica', sans-serif !important;
 }
 
-html, body {
-    font-size: 0.88rem !important;
+/* Base body sizes */
+html {
+    font-size: 0.85rem !important;
 }
-p, li, span, a, div {
+
+/* CRITICAL FIX: Apply small text to paragraphs and list items,
+ *  but prevent it from shrinking headings that live inside divs/spans.
+ */
+p, li, a {
     font-size: 0.92rem !important;
 }
-h1, h2, h3 {
+
+
+/* ==========================================================================
+ *  TYPOGRAPHY HIERARCHY (Explicitly targeted and prioritized)
+ *  ========================================================================== */
+h1, h2, h3, h4 {
     letter-spacing: -0.02em !important;
 }
 
-/* Target the navigation bar menu link elements globally */
+/* Page Main Titles (e.g., "Research") */
+body h1, .section-heading h1, h1.embed-title {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    display: block !important;
+}
+
+/* Section Headings (e.g., "Current Research Focus", "Peer-Reviewed Publications") */
+body h2, .section-heading h2, h2.block-title {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+}
+
+/* Individual Item Titles (e.g., Your Paper Titles) */
+body h3, body h4, .card-title {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    display: block !important;
+}
+
+/* ==========================================================================
+ *  Target the navigation bar menu link elements globally
+ *  ========================================================================== */
 .navbar-nav .nav-link, nav a, .menu-item {
-    font-size: 1.2rem !important; /* Adjust this value up or down (e.g., 1.2rem) to get your perfect size */
-    font-weight: 600 !important;   /* Makes the text slightly sharper and easier to read */
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
 }
 
 /* Force hide the name brand text explicitly inside the header layout container */
@@ -28,4 +63,36 @@ h1, h2, h3 {
 [class*="BrandText"],
 [class*="logo"] span {
     display: none !important;
+}
+
+/* ==========================================================================
+ *  ENLARGE PAGE AND CONTENT WIDTH
+ *  ========================================================================== */
+
+/* 1. Force the landing page block sections to take up maximum container layout width */
+.universal-wrapper,
+.article-container,
+main section .mx-auto,
+div[class*="max-w-prose"],
+div[class*="max-w-3xl"] {
+    max-width: 800px !important;  /* Expands the max container width */
+    width: 100% !important;
+}
+
+/* 2. Remove the limits specifically on text blocks (like Markdown paragraphs)
+ *  so they don't wrap and cut off early on wide screens */
+.prose,
+.prose p,
+.prose ul,
+.prose div {
+    max-width: none !important;    /* Breaks Tailwind's standard narrow text limit */
+    width: 100% !important;
+}
+
+/* 3. Ensure publication collection item rows stretch fully */
+.pub-list-item,
+[class*="content-stream"],
+[class*="view-"] {
+    max-width: 100% !important;
+    width: 100% !important;
 }
