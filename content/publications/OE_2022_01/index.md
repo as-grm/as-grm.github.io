@@ -1,5 +1,7 @@
 ---
+# Title
 title: "On the material parameters identification of flexible mooring dolphin"
+
 # Authors (use 'me' for your own profile link, or full names for co-authors)
 authors:
 - me
@@ -8,23 +10,17 @@ author_notes:
 - "Equal contribution"
 - "Equal contribution"
 
-date: "2022-07-01"
-
-# Schedule page publish date (this can just match your publication date)
-publishDate: "2026-05-30"
-
 # Publication type (From CSL standard. For journal articles, always use 'article-journal')
 publication_types: ["article-journal"]
 
 # Publication metadata — Detailed journal structural fields
-publication: "Ocean Engineering"
-publication_short: "OE"
-
-# Volume, Issue, and Page numbers (Critical for Journals)
-volume: "255"
-issue: "111269"
-page_start: "1"
-page_end: "17"
+publication:
+  name: "Ocean Engineering"
+  short_name: "OE"
+  volume: "255"
+  issue: "111269"
+  pages: "1-17"
+  publisher: "Elsevier"
 
 # Set to true if the journal is peer-reviewed
 peer_reviewed: true
