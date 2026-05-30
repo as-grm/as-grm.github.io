@@ -18,12 +18,4 @@ sections:
       spacing:
         padding: ['20px', '0', '20px', '0']
 
-  # SECTION 2: Automated Collection of your Published Papers
-  - block: markdown
-    id: research-intro
-    content:
-      title: Marine Hydromechanics
-    design:
-      spacing:
-        padding: ['20px', '0', '20px', '0']
 ---

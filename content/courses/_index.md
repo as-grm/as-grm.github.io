@@ -14,7 +14,7 @@ sections:
   - block: collection
     id: courses
     content:
-      title: Courses
+      title: Courses - TBD
       filters:
         tag: Course
         kinds:

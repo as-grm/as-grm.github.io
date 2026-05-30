@@ -5,10 +5,13 @@ title: "On the material parameters identification of flexible mooring dolphin"
 # Authors (use 'me' for your own profile link, or full names for co-authors)
 authors:
 - me
-- S. Panda
+- S. PANDA
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
+
+# Publication date
+date: "2022-07-01"
 
 # Publication type (From CSL standard. For journal articles, always use 'article-journal')
 publication_types: ["article-journal"]
@@ -48,7 +51,7 @@ links:
 # Image configuration (Looks for 'featured.jpg' or 'featured.png' inside this folder)
 # Example of caption with url: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
 image:
-  caption: "General situation in dolfin dynamics"
+  caption: "General situation in mooring dolphin dynamics"
   focal_point: ""
   preview_only: false
 
