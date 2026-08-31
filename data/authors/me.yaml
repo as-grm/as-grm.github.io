@@ -15,8 +15,7 @@ status:
 role: Assistant Professor
 bio: |
   I am an Assistant Professor at the University of Ljubljana. My core research
-  and professional work focuses on Marine Hydromechanics, as well as Industrial
-  and Computational Mathematics.
+  and professional work focuses on Marine Hydromechanics, as well as Computational Mechanics.
 
 affiliations:
   - name: University of Ljubljana
@@ -35,7 +34,7 @@ links:
 
 interests:
   - Marine Hydromechanics
-  - Industrial and Computational Mathematics
+  - Computational Mechanics
 
 education:
   - degree: PhD Industrial Mathematics

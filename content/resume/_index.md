@@ -25,6 +25,7 @@ With an extensive history leading private R&D projects alongside core university
   * Engineering Physics
   * Ship theory & Ocean navigation
   * Marine Hydrodynamics
+  * Computational Mechanics
   
 
 * **2021 — Present** **Researcher (Computational Mechanics)** *University of Ljubljana, Faculty of Engineering (FS) | Ljubljana, Slovenia* Developing high-performance calculation codes, discrete mesh solvers, and advanced mechanical simulation architectures.
